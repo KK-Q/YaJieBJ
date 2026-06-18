@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*font-family: PingFangSC, PingFang SC;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li, dl, dd {
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+}
+
+.hidden_scrollbar {
+    overflow-y: scroll;
+　　scrollbar-color: transparent transparent;
+　　scrollbar-track-color: transparent;
+　　-ms-scrollbar-track-color: transparent;
+}
+
+.hidden_scrollbar::-webkit-scrollbar {
+    width: 0 !important;
+    background-color: #f0f0f0;
+}
+.hidden_scrollbar::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+/* 禁用页面整体横向滚动 */
+body {
+  overflow-x: hidden; /* 隐藏横向滚动条并禁止横向滚动 */
+  width: 100%; /* 确保宽度为100%，避免内容溢出 */
+  margin: 0; /* 清除默认margin，防止意外横向空间 */
+  padding: 0; /* 清除默认padding */
+}
+
+/* 可选：进一步限制所有元素不溢出容器 */
+* {
+  box-sizing: border-box; /* 确保padding和border不增加元素总宽度 */
+  max-width: 100%; /* 防止元素宽度超过容器 */
+}
+
+@layer utilities {
+    /* 永久隐藏滚动条但保留滚动功能 */
+    .scrollbar-permanently-hide {
+        -ms-overflow-style: none;  /* IE 和 Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .scrollbar-permanently-hide::-webkit-scrollbar {
+        display: none;  /* Chrome, Safari 和 Opera */
+    }
+}
+
+

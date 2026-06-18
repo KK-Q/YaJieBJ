@@ -1,0 +1,117 @@
+.header {
+	position: fixed;
+	z-index: 100;
+	background-color:rgba(21, 34, 43, 0.6);
+}
+.header-logo {
+	position: absolute;
+}
+.header-logo img {
+	width: 100%;
+}
+.header-line {
+	position: absolute;
+}
+.header-line div {
+	float: left;
+	text-align: center;
+}
+.header-line div a {
+	color: #fff;
+}
+.header-line div {
+	color: #fff;
+	cursor: pointer;
+}
+.header-service-list {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 2px;
+}
+.header-service-list li a {
+	color: #000;
+}
+
+.main {
+    position: absolute;
+}
+.banner {
+	position: absolute;
+	background-image: url("../image/video/bg3.png");
+    background-size: 100% 100%;
+}
+
+.videos {
+	position: absolute;
+}
+.videos-image-title,.videos-bank-title {
+	position: absolute;
+	background-image: url("../image/video/bg_slgy_mtitle.png");
+    background-size: 100% 100%;
+    color: #ffe6c8;
+    letter-spacing: 5px;
+}
+.videos-image {
+	position: absolute;
+	border-radius: 6px;
+    border: 1px solid #ffd585;
+	background-image: url("../image/news/81.jpg");
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.videos-bank {
+	position: absolute;
+	border-radius: 6px;
+    border: 1px solid #ffd585;
+	background-image: url("../image/video/1676463745885_438.jpg");
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+
+
+.footer {
+	position: absolute;
+	background-color: #363636;
+}
+.footer-one,.footer-two,.footer-three,.footer-four,.footer-logo {
+	position: absolute;
+}
+.footer-title {
+	position: absolute;
+	color: #fff;
+}
+.footer-list {
+	position: absolute;
+	color: #717171;
+}
+.footer-list a {
+	color: #717171;
+}
+.footer-logo div {
+	position: absolute;
+}
+.footer-shipinghao {
+	background-image: url("../image/logo/shipinghao.png");
+    background-size: 100% 100%;
+}
+.footer-gongzhonghao {
+	background-image: url("../image/logo/gongzhonghao.png");
+    background-size: 100% 100%;
+}
+.footer-xiaohongshu {
+	background-image: url("../image/logo/xiaohongshu.png");
+    background-size: 100% 100%;
+}
+.footer-douyin {
+	background-image: url("../image/logo/douyin.png");
+    background-size: 100% 100%;
+}
+.footer-phone,.footer-address,.footer-email,.footer-container {
+	position: absolute;
+	color: #717171;
+}
+.footer-container {
+	text-align: center;
+}
+

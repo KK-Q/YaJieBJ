@@ -1,0 +1,319 @@
+.header {
+	position: fixed;
+	z-index: 100;
+	background-color:rgba(21, 34, 43, 0.6);
+}
+.header-logo,.header-menu {
+	position: absolute;
+}
+.header-hide {
+	position: fixed;
+	z-index: 20;
+	background-color:rgba(21, 34, 43, 0.6);
+    height: 100%;
+    color: #fff;
+}
+.header-hide a {
+	color: #fff;
+}
+.header-hide-line {
+	position: absolute;
+}
+.header-hide-service {
+	text-indent: 6em;
+	display: none;
+}
+.header-hide-service-show {
+	background-image: url("../image/mindex/up.png");
+	background-size: 100% 100%;
+}
+.header-logo img,.header-menu img {
+	width: 100%;
+}
+.header-line {
+	position: absolute;
+}
+.header-line div {
+	float: left;
+	text-align: center;
+}
+.header-line div a {
+	color: #fff;
+}
+.header-line div {
+	color: #fff;
+	cursor: pointer;
+}
+.header-service-list {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 2px;
+}
+.header-service-list li a {
+	color: #000;
+}
+
+
+.main {
+    position: absolute;
+}
+.banner {
+	position: absolute;
+	background-image: url("../image/mindex/banner.png");
+    background-size: 100% 100%;
+}
+.banner-title {
+	position: absolute;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+}
+.banner-content {
+	position: absolute;
+	color: #fff;
+	text-align: center;
+}
+
+.company-video {
+	position: absolute;
+}
+.company-video-title {
+	position: absolute;
+	color: #007fff;
+    text-transform: uppercase;
+}
+.company-video-content {
+	position: absolute;
+	color: #222222;
+}
+.company-video-mp4 {
+	position: absolute;
+	background-color: #000;
+	border-radius: 10px;
+}
+.company-video-mp4 video {
+	position: absolute;
+	border-radius: 2px;
+}
+
+.company-service {
+	position: absolute;
+}
+.company-service-title {
+	position: absolute;
+	color: #007fff;
+    text-transform: uppercase;
+}
+.company-service-content {
+	position: absolute;
+	color: #222222;
+}
+.company-services {
+	position: absolute;
+}
+.company-services-wisdom {
+	position: absolute;
+	background-image: url("../image/mindex/wisdom.png");
+    background-size: 100% 100%;
+}
+.company-services-env {
+	position: absolute;
+	background-image: url("../image/mindex/env.png");
+    background-size: 100% 100%;
+}
+.company-services-support {
+	position: absolute;
+	background-image: url("../image/mindex/support.png");
+    background-size: 100% 100%;
+}
+.company-services-hr {
+	position: absolute;
+	background-image: url("../image/mindex/hr.png");
+    background-size: 100% 100%;
+}
+.company-services-title {
+	position: absolute;
+	color: #fff;
+}
+.company-services-line {
+	position: absolute;
+	background-color: #6fb3b6;
+}
+.company-services-content {
+	position: absolute;
+	color: #b4cad6;
+	overflow: hidden;
+}
+.company-services-more {
+	position: absolute;
+	text-align: right;
+}
+.company-services-more a {
+	color: #fff;
+}
+
+
+.company-news {
+	position: absolute;
+}
+.company-news-title {
+	position: absolute;
+	color: #007fff;
+    text-transform: uppercase;
+}
+.company-news-content {
+	position: absolute;
+	color: #222222;
+}
+.company-news-people {
+	position: absolute;
+	background-image: url("../image/mindex/VCG211282564853.png");
+    background-size: 100% 100%;
+    border-radius: 10px;
+    color: #fff;
+}
+.company-news-people div {
+	position: absolute;
+	font-weight: 100;
+}
+
+.company-news-one {
+	position: absolute;
+	border-radius: 10px;
+	background-color: #f1f1f1;
+}
+.company-news-one div {
+	position: absolute;
+	font-weight: 100;
+}
+.company-news-one-name,.company-news-one-more {
+	color: #007fff;
+}
+.company-news-one-more {
+	text-align: right;
+}
+.company-news-one-more a {
+	color: #007fff;
+}
+.company-news-one-title {
+	color: #000;
+}
+.company-news-one-time {
+	color: #7e7e7e;
+}
+
+.company-news-two {
+	position: absolute;
+	background-image: url("../image/news/news-two.jpg");
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+.company-news-line {
+	position: absolute;
+	background-image: url("../image/news/news-line.jpg");
+    background-size: 100% 100%;
+    border-radius: 10px;
+    font-weight: 100;
+}
+.company-news-line-name,.company-news-line-names,.company-news-line-list,.company-news-line-more {
+	position: absolute;
+	color: #fff;
+}
+.company-news-line-list {
+	overflow: hidden;
+}
+.company-news-line-more a {
+	color: #fff;
+}
+.company-news-line-list-title {
+	overflow: hidden;
+}
+.company-news-line-list-title a {
+	color: #fff;
+}
+
+.company-honor {
+	position: absolute;
+}
+.company-honor-title {
+	position: absolute;
+	color: #007fff;
+    text-transform: uppercase;
+}
+.company-honor-content {
+	position: absolute;
+	color: #222222;
+}
+.company-honor-video {
+	position: absolute;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.company-honor-video img {
+	width: 100%;
+	height: 100%;
+}
+.swiper-button-next, .swiper-button-prev {
+	color: #ccc;
+}
+.company-honor-line {
+	position: absolute;
+}
+.company-honor-line-title {
+	position: absolute;
+}
+.company-honor-line-content {
+	position: absolute;
+	/*color: #909090;*/
+	overflow: hidden;
+	font-weight: 100;
+}
+
+
+.footer {
+	position: absolute;
+	background-color: #363636;
+}
+.footer-one,.footer-two,.footer-three,.footer-logo {
+	position: absolute;
+}
+.footer-title {
+	position: absolute;
+	color: #fff;
+	text-align: center;
+}
+.footer-list {
+	position: absolute;
+	color: #717171;
+}
+.footer-list  li {
+	text-align: center;
+}
+.footer-logo div {
+	position: absolute;
+}
+.footer-shipinghao {
+	background-image: url("../image/logo/shipinghao.png");
+    background-size: 100% 100%;
+}
+.footer-gongzhonghao {
+	background-image: url("../image/logo/gongzhonghao.png");
+    background-size: 100% 100%;
+}
+.footer-xiaohongshu {
+	background-image: url("../image/logo/xiaohongshu.png");
+    background-size: 100% 100%;
+}
+.footer-douyin {
+	background-image: url("../image/logo/douyin.png");
+    background-size: 100% 100%;
+}
+.footer-phone,.footer-address,.footer-email,.footer-container {
+	position: absolute;
+	color: #717171;
+}
+.footer-container {
+	text-align: center;
+}
+

@@ -1,0 +1,673 @@
+@layer utilities {
+    /* 永久隐藏滚动条但保留滚动功能 */
+    .scrollbar-permanently-hide {
+        -ms-overflow-style: none;  /* IE 和 Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .scrollbar-permanently-hide::-webkit-scrollbar {
+        display: none;  /* Chrome, Safari 和 Opera */
+    }
+}
+
+.header {
+	position: fixed;
+	z-index: 100;
+	background-color:rgba(21, 34, 43, 0.6);
+}
+.header-logo,.header-menu {
+	position: absolute;
+}
+.header-hide {
+	position: fixed;
+	z-index: 20;
+	background-color:rgba(21, 34, 43, 0.6);
+    height: 100%;
+    color: #fff;
+}
+.header-hide a {
+	color: #fff;
+}
+.header-hide-line {
+	position: absolute;
+}
+.header-hide-service {
+	text-indent: 6em;
+	display: none;
+}
+.header-hide-service-show {
+	background-image: url("../image/mindex/up.png");
+	background-size: 100% 100%;
+}
+.header-logo img,.header-menu img {
+	width: 100%;
+}
+.header-line {
+	position: absolute;
+}
+.header-line div {
+	float: left;
+	text-align: center;
+}
+.header-line div a {
+	color: #fff;
+}
+.header-line div {
+	color: #fff;
+	cursor: pointer;
+}
+.header-service-list {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 2px;
+}
+.header-service-list li a {
+	color: #000;
+}
+
+
+.main {
+    position: absolute;
+}
+.banner {
+	position: absolute;
+	background-image: url("../image/mabout/bg.png");
+    background-size: 100% 100%;
+}
+
+.about-list {
+	position: absolute;
+	border-bottom: 1px solid #ccc;
+}
+.about-list div {
+	position: absolute;
+	text-align: center;
+	cursor: pointer;
+}
+.about-list .action {
+	background-color: #1d2088;
+	color: #fff;
+}
+.about-list-page {
+	color: #999;
+}
+
+.about-intro {
+	position: absolute;
+}
+.about-intro-name {
+	position: absolute;
+	color: rgb(102, 102, 102);
+}
+.about-intro-name b {
+	color: rgb(51, 51, 51);
+}
+.about-intro-feature,.about-intro-feature div {
+	position: absolute;
+}
+.about-intro-feature div {
+	background-image: url("../image/about/feature.png");
+    background-size: 100% 100%;
+    text-indent: 2em;
+}
+.about-intro-video {
+	position: absolute;
+	background-image: url("../image/about/intro-bg.jpg");
+    background-size: 100% 100%;
+}
+.about-intro-service {
+	position: absolute;
+	background-image: url("../image/about/intro-service.jpg");
+    background-size: 100% 100%;
+}
+.about-intro-service-title {
+	position: absolute;
+}
+.about-intro-service-content {
+	position: absolute;
+	color: rgb(85,85,85);
+}
+.about-intro-service-city,.about-intro-service-project {
+	position: absolute;
+	font-weight: bold;
+}
+.about-intro-service-city-num,.about-intro-service-project-num {
+	position: absolute;
+	color: rgb(0, 127, 255);
+}
+
+.about-intro-mode {
+	position: absolute;
+	text-align: center;
+	background-color: #f6f6f6;
+}
+.about-intro-mode-name {
+	position: absolute;
+	text-align: center;
+}
+.about-intro-mode-left,.about-intro-mode-middle,.about-intro-mode-right {
+	position: absolute;
+	border-radius: 10px;
+	background-color: #fff;
+}
+.about-intro-mode-left .about-intro-mode-image {
+	position: absolute;
+	background-image: url("../image/about/8495e1256a08b79a8b5cb553bffe7fba.png");
+    background-size: 100% 100%;
+}
+.about-intro-mode-middle .about-intro-mode-image {
+	position: absolute;
+	background-image: url("../image/about/560352e6718e2100793646b9309b1188.png");
+    background-size: 100% 100%;
+}
+.about-intro-mode-right .about-intro-mode-image {
+	position: absolute;
+	background-image: url("../image/about/b933e39f06a74aa37b8ba12876c54bf2.png");
+    background-size: 100% 100%;
+}
+.about-intro-mode-title {
+	position: absolute;
+	color: #333333;
+	text-align: center;
+}
+.about-intro-mode-content {
+	position: absolute;
+	color: #666666;
+	letter-spacing: 1px;
+	text-indent: 2em;
+	text-align: left;
+	overflow: hidden;
+}
+.about-intro-cooperate {
+	position: absolute;
+	text-align: center;
+}
+.about-intro-cooperate-name {
+	position: absolute;
+}
+.about-intro-cooperate-list {
+	position: absolute;
+}
+.about-intro-cooperate-list div {
+	float: left;
+}
+.about-intro-cooperate-list div img {
+	width: 100%;
+}
+
+
+
+.about-history {
+	position: absolute;
+}
+.about-history-circle-right {
+	position: absolute;
+	background-image: url("../image/mabout/circle-left.png");
+    background-size: 100% 100%;
+    text-align: center;
+    color: #1d2088;
+}
+.about-history-content-right {
+	position: absolute;
+	border-left: 1px dashed #1d2088;
+	text-align: center;
+}
+.about-history-circle-left {
+	position: absolute;
+	background-image: url("../image/about/circle-right.png");
+    background-size: 100% 100%;
+    text-align: center;
+    color: #1d2088;
+}
+.about-history-content-left {
+	position: absolute;
+	border-right: 1px dashed #1d2088;
+	text-align: center;
+}
+
+
+
+.about-culture {
+	position: absolute;
+}
+.about-culture-mission {
+	position: absolute;
+}
+.about-culture-mission-title {
+	position: absolute;
+	text-align: center;
+	letter-spacing: 5px;
+}
+.about-culture-mission-content {
+	position: absolute;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.about-culture-mission-one-image {
+	position: absolute;
+	background-image: url("../image/about/culture1.png");
+    background-size: 100% 100%;
+    border-radius: 120px;
+    border: 1px solid #000;
+}
+.about-culture-mission-two-image {
+	position: absolute;
+	background-image: url("../image/about/culture2.png");
+    background-size: 100% 100%;
+    border-radius: 120px;
+    border: 1px solid #000;
+}
+.about-culture-mission-three-image {
+	position: absolute;
+	background-image: url("../image/about/culture3.png");
+    background-size: 100% 100%;
+    border-radius: 120px;
+    border: 1px solid #000;
+}
+.about-culture-mission-one-title,.about-culture-mission-two-title,.about-culture-mission-three-title {
+	position: absolute;
+	text-align: center;
+}
+.about-culture-mission-one-content,.about-culture-mission-two-content,.about-culture-mission-three-content {
+	position: absolute;
+	text-align: center;
+}
+
+.about-culture-hope {
+	position: absolute;
+	background-image: url("../image/about/hope.png");
+    background-size: 100% 100%;
+    color: #fff;
+}
+.about-culture-hope-title {
+	position: absolute;
+	text-align: center;
+	letter-spacing: 5px;
+}
+.about-culture-hope-one-image {
+	position: absolute;
+	background-image: url("../image/about/culture4.png");
+    background-size: 100% 100%;
+    border-radius: 140px;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+.about-culture-hope-two-image {
+	position: absolute;
+	background-image: url("../image/about/culture5.png");
+    background-size: 100% 100%;
+    border-radius: 140px;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+.about-culture-hope-content,.about-culture-hope-one-title,.about-culture-hope-two-title {
+	position: absolute;
+	text-align: center;
+}
+.about-culture-principle {
+	position: absolute;
+	background-image: url("../image/about/q2.jpg");
+    background-size: 100% 100%;
+}
+.about-culture-principle-title {
+	position: absolute;
+	text-align: center;
+	letter-spacing: 5px;
+}
+.about-culture-principle-left {
+	position: absolute;
+}
+.about-culture-principle-right {
+	position: absolute;
+}
+.about-culture-principle-left div {
+	position: absolute;
+	border: 1px solid #000;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+.about-culture-principle-left .action {
+	background-color: #032861;
+	color: #fff;
+}
+.about-culture-principle-right {
+	display: flex;
+	align-items: center;
+}
+.about-culture-principle-right div{
+	position: absolute;
+}
+.about-culture-values {
+	position: absolute;
+}
+.about-culture-values-title {
+	position: absolute;
+	text-align: center;
+	letter-spacing: 5px;
+}
+.about-culture-values-one-image {
+	position: absolute;
+	background-image: url("../image/about/values1.png");
+    background-size: 100% 100%;
+    border-radius: 120px;
+    border: 1px solid #000;
+}
+.about-culture-values-two-image {
+	position: absolute;
+	background-image: url("../image/about/values2.png");
+    background-size: 100% 100%;
+    border-radius: 120px;
+    border: 1px solid #000;
+}
+.about-culture-values-three-image {
+	position: absolute;
+	background-image: url("../image/about/values3.png");
+    background-size: 100% 100%;
+    border-radius: 120px;
+    border: 1px solid #000;
+}
+.about-culture-values-four-image {
+	position: absolute;
+	background-image: url("../image/about/values4.png");
+    background-size: 100% 100%;
+    border-radius: 120px;
+    border: 1px solid #000;
+}
+.about-culture-values-five-image {
+	position: absolute;
+	background-image: url("../image/about/values5.png");
+    background-size: 100% 100%;
+    border-radius: 120px;
+    border: 1px solid #000;
+}
+.about-culture-values-six-image {
+	position: absolute;
+	background-image: url("../image/about/values6.png");
+    background-size: 100% 100%;
+    border-radius: 120px;
+    border: 1px solid #000;
+}
+.about-culture-values-one-title,.about-culture-values-two-title,.about-culture-values-three-title,.about-culture-values-four-title,.about-culture-values-five-title,.about-culture-values-six-title {
+	position: absolute;
+	text-align: center;
+}
+.about-culture-values-one-content,.about-culture-values-two-content,.about-culture-values-three-content,.about-culture-values-four-content,.about-culture-values-five-content,.about-culture-values-six-content {
+	position: absolute;
+	text-align: center;
+	color: #656565;
+	overflow: hidden;
+}
+
+.about-party {
+	position: absolute;
+}
+.about-party-intro {
+	position: absolute;
+	background-image: url("../image/about/party-bg.jpg");
+    background-size: 100% 100%;
+}
+.about-party-intro-title {
+	position: absolute;
+	text-align: center;
+	letter-spacing: 5px;
+}
+.about-party-intro-content {
+	position: absolute;
+    font-weight: 100;
+}
+.about-party-news {
+	position: absolute;
+	background-color: #EFF2F5;
+}
+.about-party-news-title {
+	position: absolute;
+	text-align: center;
+	letter-spacing: 5px;
+}
+.about-party-news-video {
+	position: absolute;
+	background-image: url("../image/about/party-bg.jpeg");
+    background-size: 100% 100%;
+}
+.about-party-news-list {
+	position: absolute;
+}
+.about-party-news-list li {
+	border-bottom: 1px solid #000;
+}
+.about-party-news-list li a {
+	color: #000;
+}
+.about-party-mien {
+	position: absolute;
+}
+.about-party-mien-title {
+	position: absolute;
+	text-align: center;
+	letter-spacing: 5px;
+}
+.about-party-mien-list {
+	position: absolute;
+	overflow: hidden;
+}
+.about-party-mien-list .swiper-slide img {
+	width: 100%;
+}
+.swiper-button-next, .swiper-button-prev {
+	color: #ccc;
+}
+
+.about-honor {
+	position: absolute;
+}
+.about-honor-list {
+	position: absolute;
+	overflow-y: auto;
+}
+.about-honor-image {
+	position: absolute;
+	border-bottom: 1px solid #000;
+}
+.about-honor-image img {
+	width: 100%;
+}
+.about-honor-text {
+	position: absolute;
+	text-align: center;
+}
+
+.about-organize {
+	position: absolute;
+}
+.about-organize-top,.about-organize-top-two,.about-organize-top-one,.about-organize-top-three {
+	position: absolute;
+	background-color: #edeae6;
+}
+.about-organize-top-frame {
+	position: absolute;
+	background-color: #c20200;
+	color: #f5d8d3;
+	text-align: center;
+}
+.about-organize-middle {
+	position: absolute;
+	background-color: #edeae6;
+}
+.about-organize-middle-frame {
+	position: absolute;
+	background-color: #d43421;
+	color: #f5d8d3;
+	text-align: center;
+}
+.about-organize-bottom {
+	position: absolute;
+	background-color: #edeae6;
+}
+.about-organize-bottom-frame {
+	position: absolute;
+	background-color: #c39a29;
+	color: #f5d8d3;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+.about-organize-middle-bottom-frame {
+	background-color: #c39a29;
+}
+.about-organize-line {
+	position: absolute;
+	background-color: #edeae6;
+}
+
+
+
+
+
+
+.about-welfare {
+	position: absolute;
+	background-color: #F9F9F9;
+}
+.about-welfare-title {
+	position: absolute;
+	text-align: center;
+}
+.about-welfare-content {
+	position: absolute;
+	text-align: center;
+	color: #656565;
+}
+.about-welfare-num {
+	position: absolute;
+	text-align: center;
+}
+.about-welfare-titles {
+	position: absolute;
+	text-align: center;
+	color: #656565;
+}
+.about-welfare-news {
+	position: absolute;
+}
+.about-welfare-news-title {
+	position: absolute;
+	text-align: center;
+}
+.about-welfare-news-list {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.about-welfare-news-img {
+	position: absolute;
+}
+.about-welfare-news-img img {
+	width: 100%;
+}
+.about-welfare-news-time {
+	position: absolute;
+}
+.about-welfare-news-content {
+	position: absolute;
+	overflow: hidden;
+}
+.about-welfare-news .swiper-button-next, .about-welfare-news .swiper-button-prev {
+	color: #ccc;
+}
+
+.about-welfare-project {
+	position: absolute;
+}
+.about-welfare-project-title {
+	position: absolute;
+	text-align: center;
+}
+.about-welfare-project-list {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.about-welfare-project-img {
+	position: absolute;
+}
+.about-welfare-project-img img {
+	width: 100%;
+}
+.about-welfare-project-bg {
+	position: absolute;
+	background-color: #000;
+	opacity: 0.3;
+}
+.about-welfare-project-content {
+	position: absolute;
+	color: #fff;
+}
+.about-project-news .swiper-button-next, .about-project-news .swiper-button-prev {
+	color: #ccc;
+}
+
+.about-welfare-sologn {
+	position: absolute;
+	background-image: url("../image/about/gongyi.png");
+    background-size: 100% 100%;
+}
+.about-welfare-sologn-title {
+	position: absolute;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+.about-welfare-sologn-content {
+	position: absolute;
+	text-align: center;
+	color: #fff;
+}
+
+
+.footer {
+	position: absolute;
+	background-color: #363636;
+}
+.footer-one,.footer-two,.footer-three,.footer-logo {
+	position: absolute;
+}
+.footer-title {
+	position: absolute;
+	color: #fff;
+	text-align: center;
+}
+.footer-list {
+	position: absolute;
+	color: #717171;
+}
+.footer-list li {
+	text-align: center;
+}
+.footer-logo div {
+	position: absolute;
+}
+.footer-shipinghao {
+	background-image: url("../image/logo/shipinghao.png");
+    background-size: 100% 100%;
+}
+.footer-gongzhonghao {
+	background-image: url("../image/logo/gongzhonghao.png");
+    background-size: 100% 100%;
+}
+.footer-xiaohongshu {
+	background-image: url("../image/logo/xiaohongshu.png");
+    background-size: 100% 100%;
+}
+.footer-douyin {
+	background-image: url("../image/logo/douyin.png");
+    background-size: 100% 100%;
+}
+.footer-phone,.footer-address,.footer-email,.footer-container {
+	position: absolute;
+	color: #717171;
+}
+.footer-container {
+	text-align: center;
+}
