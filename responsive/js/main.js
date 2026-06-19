@@ -1,7 +1,3 @@
-// ============================================
-// 盛旺雅洁 — 主 JavaScript
-// ============================================
-
 (function() {
   'use strict';
 
@@ -15,22 +11,24 @@
       mobileMenu.classList.toggle('open');
     });
 
-    // Close menu on link click
-    mobileMenu.querySelectorAll('a').forEach(function(link) {
-      link.addEventListener('click', function() {
-        hamburger.classList.remove('open');
-        mobileMenu.classList.remove('open');
-      });
-    });
+    // Event delegation for mobile menu clicks
+    mobileMenu.addEventListener('click', function(e) {
+      var link = e.target.closest('a');
+      if (!link) return;
 
-    // Sub-menu toggle
-    mobileMenu.querySelectorAll('.has-sub > a').forEach(function(a) {
-      a.addEventListener('click', function(e) {
+      var parent = link.parentElement;
+      if (parent && parent.classList.contains('has-sub')) {
+        // Toggle sub-menu
         e.preventDefault();
-        var parent = this.parentElement;
         parent.classList.toggle('open');
-        parent.querySelector('.sub-nav').classList.toggle('open');
-      });
+        var sub = parent.querySelector('.sub-nav');
+        if (sub) sub.classList.toggle('open');
+        return;
+      }
+
+      // Regular link: close menu
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
     });
   }
 
@@ -55,7 +53,7 @@
     }
   });
 
-  // ---- Swiper init helper ----
+  // ---- Init helpers ----
   window.initSwiper = function(selector, opts) {
     if (typeof Swiper === 'undefined') return null;
     return new Swiper(selector, Object.assign({
@@ -66,7 +64,6 @@
     }, opts || {}));
   };
 
-  // ---- Tab switching helper ----
   window.initTabs = function(tabSelector, contentSelector, dataAttr) {
     document.querySelectorAll(tabSelector).forEach(function(tab) {
       tab.addEventListener('click', function() {
@@ -80,7 +77,6 @@
     });
   };
 
-  // ---- News feed loader ----
   window.loadNews = function(containerSelector, apiUrl) {
     var container = document.querySelector(containerSelector);
     if (!container) return;
