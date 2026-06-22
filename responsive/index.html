@@ -61,7 +61,7 @@
   </section>
 
   <!-- ===== Video ===== -->
-  <section class="section" style="padding-top:40px;padding-bottom:40px;">
+  <section class="section" style="padding-top:40px;padding-bottom:40px;" data-reveal data-delay="100">
     <div class="container">
       <div class="section-title">SpaceTECH</div>
       <div class="section-subtitle">上海盛旺雅洁环境管理有限公司</div>
@@ -79,7 +79,7 @@
       <div class="section-title">service</div>
       <div class="section-subtitle">核心业务板块与场景化</div>
       <div class="card-grid cols-4" style="grid-template-columns:1fr;">
-        <div class="service-card" style="background-image:url('../image/mindex/wisdom.png');">
+        <div class="service-card" data-reveal data-delay="100" style="background-image:url('../image/mindex/wisdom.png');">
           <div class="service-card-inner">
             <h3>智慧空间运维</h3>
             <div class="service-card-line"></div>
@@ -87,7 +87,7 @@
             <a class="service-card-more" href="service.html">查看详情 →</a>
           </div>
         </div>
-        <div class="service-card" style="background-image:url('../image/mindex/env.png');">
+        <div class="service-card" data-reveal data-delay="200" style="background-image:url('../image/mindex/env.png');">
           <div class="service-card-inner">
             <h3>城乡环境一体化</h3>
             <div class="service-card-line"></div>
@@ -95,7 +95,7 @@
             <a class="service-card-more" href="env.html">查看详情 →</a>
           </div>
         </div>
-        <div class="service-card" style="background-image:url('../image/mindex/support.png');">
+        <div class="service-card" data-reveal data-delay="300" style="background-image:url('../image/mindex/support.png');">
           <div class="service-card-inner">
             <h3>综合行政与后勤支持</h3>
             <div class="service-card-line"></div>
@@ -103,7 +103,7 @@
             <a class="service-card-more" href="logistics.html">查看详情 →</a>
           </div>
         </div>
-        <div class="service-card" style="background-image:url('../image/mindex/hr.png');">
+        <div class="service-card" data-reveal data-delay="400" style="background-image:url('../image/mindex/hr.png');">
           <div class="service-card-inner">
             <h3>人力资源与灵活用工</h3>
             <div class="service-card-line"></div>
@@ -148,10 +148,10 @@
     <div class="container">
       <div class="section-title">honor</div>
       <div class="section-subtitle">公司荣誉</div>
-      <div class="swiper" id="honorSwiper">
+      <div class="swiper" id="honorSwiper" data-reveal data-delay="100">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="honor-card">
+            <div class="honor-card" data-reveal data-delay="100">
               <div class="honor-card-img"><img src="../image/company/12.png" alt="全国巾帼文明岗"></div>
               <div class="honor-card-text">
                 <h4>全国巾帼文明岗</h4>
@@ -160,7 +160,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="honor-card">
+            <div class="honor-card" data-reveal data-delay="200">
               <div class="honor-card-img"><img src="../image/company/13.png" alt="上海市文明单位"></div>
               <div class="honor-card-text">
                 <h4>上海市文明单位</h4>
@@ -169,7 +169,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="honor-card">
+            <div class="honor-card" data-reveal data-delay="300">
               <div class="honor-card-img"><img src="../image/company/14.png" alt="上海市工人先锋号"></div>
               <div class="honor-card-text">
                 <h4>上海市工人先锋号</h4>
@@ -178,7 +178,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="honor-card">
+            <div class="honor-card" data-reveal data-delay="400">
               <div class="honor-card-img"><img src="../image/company/15.png" alt="和谐劳动关系企业"></div>
               <div class="honor-card-text">
                 <h4>上海市和谐劳动关系企业</h4>
@@ -187,7 +187,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="honor-card">
+            <div class="honor-card" data-reveal data-delay="500">
               <div class="honor-card-img"><img src="../image/company/16.png" alt="优秀学习型企业"></div>
               <div class="honor-card-text">
                 <h4>上海市优秀学习型企业</h4>
@@ -196,7 +196,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="honor-card">
+            <div class="honor-card" data-reveal data-delay="600">
               <div class="honor-card-img"><img src="../image/company/17.png" alt="上海名牌"></div>
               <div class="honor-card-text">
                 <h4>上海名牌</h4>
@@ -205,7 +205,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="honor-card">
+            <div class="honor-card" data-reveal data-delay="700">
               <div class="honor-card-img"><img src="../image/company/18.png" alt="行业品牌"></div>
               <div class="honor-card-text">
                 <h4>行业品牌</h4>
@@ -219,7 +219,7 @@
   </section>
 
   <!-- ===== Footer ===== -->
-  <footer class="footer">
+  <footer class="footer" data-reveal data-delay="100">
     <div class="footer-grid">
       <div>
         <h4>关于盛旺雅洁</h4>
@@ -267,7 +267,8 @@
     var honorSwiper = new Swiper('#honorSwiper', {
       slidesPerView: 1,
       spaceBetween: 16,
-      autoplay: { delay: 3000, disableOnInteraction: false },
+      speed: 800,
+      autoplay: { delay: 3500, disableOnInteraction: false },
       breakpoints: {
         768: { slidesPerView: 2, spaceBetween: 24 }
       }

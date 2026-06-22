@@ -23,9 +23,9 @@
     <a href="news.html">新闻资讯</a><a href="join.html">加入我们</a>
   </div>
 
-  <section class="page-banner" style="background-image:url('../image/mproject/bg.png');"><h1>核心业务</h1></section>
+  <section class="page-banner" data-reveal data-delay="50" style="background-image:url('../image/mproject/bg.png');"><h1>核心业务</h1></section>
 
-  <nav class="service-nav">
+  <nav class="service-nav" data-reveal data-delay="50">
     <a href="service.html" class="service-nav-item current">智慧空间运维</a>
     <a href="env.html" class="service-nav-item">城乡环境一体化</a>
     <a href="logistics.html" class="service-nav-item">综合行政与后勤</a>
@@ -180,7 +180,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer" data-reveal data-delay="100">
     <div class="footer-grid">
       <div>
         <h4>关于盛旺雅洁</h4>
@@ -252,7 +252,10 @@
             new Swiper(swiperEl, {
               slidesPerView: 1,
               loop: true,
-              autoplay: { delay: 2000, disableOnInteraction: false },
+              speed: 600,
+              effect: 'fade',
+              fadeEffect: { crossFade: true },
+              autoplay: { delay: 2500, disableOnInteraction: false },
               navigation: {
                 nextEl: swiperEl.querySelector('.swiper-button-next'),
                 prevEl: swiperEl.querySelector('.swiper-button-prev')
@@ -271,7 +274,10 @@
           new Swiper(el, {
             slidesPerView: 1,
             loop: true,
-            autoplay: { delay: 2000, disableOnInteraction: false },
+            speed: 600,
+            effect: 'fade',
+            fadeEffect: { crossFade: true },
+            autoplay: { delay: 2500, disableOnInteraction: false },
             navigation: {
               nextEl: el.querySelector('.swiper-button-next'),
               prevEl: el.querySelector('.swiper-button-prev')
